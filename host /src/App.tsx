@@ -1,12 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+import {RemoteContent} from "remote/remote-content"
+
 import "./index.css";
 
 const App = () => (
   <div className="container">
-    <div>Name: host </div>
-    <div>Framework: react-18</div>
+    <nav className="sidebar">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Help</li>
+        <li>Exit</li>
+      </ul>
+    </nav>
+
+    <section className="content">
+      <RemoteContent />
+    </section>
   </div>
 );
 
